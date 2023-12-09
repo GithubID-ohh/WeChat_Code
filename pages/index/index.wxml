@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<!--引入container类-->
+<view class="container">
+  <!--头像盒子-->
+  <view class="head-box">
+    <image src="/images/head.png" mode=""/>
+    <view>{{title}}</view>
+  </view>
+  <!-- 创建一个天气显示盒子 -->
+  <view class="weather_box"> 
+       <!-- 创建欢迎盒子-->
+      <view class="welcome_text">
+        <!-- 创建welcom变量显示 -->
+        {{welcome}}
+      </view>
+      <!-- 绑定一个flex类搞个弹性盒子 -->
+      <view class="flex">
+          <!--左右5%-->
+          <view class="w50">
+             <image src="/images/preview.png" style="width: 300rpx;margin-top: -40rpx; margin-left: 50rpx;" mode="widthFix"/>
+          </view>
+          <view>
+          <!-- 右边组件 -->
+            <View class=" location_text">
+              <image src="/images/map.png" style="width: 25rpx; margin-top: 10rpx;" mode="widthFix"/>
+              <text style="font-size: 24rpx; margin-left: 10rpx;">{{location}}</text>
+            </View>
+            <!-- 温度显示 -->
+            <view class="temperature_text">
+            {{temperature}}℃
+            </view>
+
+
+
+          </view>
+      </view>
+  </view>
+  <!-- MQTT相关配置 -->
+  <view class="mqtt_box">
+    <view class="w50">
+      <!-- 下拉菜单 -->
+      <van-icon name="arrow-down" /><text>连接状态</text>
+    </view>
+    <!-- 判断连接状态 -->
+    <view style="color:{{isConnect ?'RGB(0,176,80)' : 'RGB(192,0,0)'}} ">
+      <!-- 连接状态 -->
+      {{isConnect ? '已连接' : '未连接'}}
+    </view>
+
+  </view>
+
+
+</view>

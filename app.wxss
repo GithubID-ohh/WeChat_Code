@@ -1,0 +1,10 @@
+/**app.wxss**/
+/* 全局背景 */
+.container {
+  min-height: 100vh; /*最小高度*/
+  background-color: rgb(242, 242, 242);
+} 
+/* 定义弹性盒子全局变量 */
+.flex{
+  display: flex;
+}

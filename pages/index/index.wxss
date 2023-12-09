@@ -1,0 +1,77 @@
+/**index.wxss**/
+.head-box{
+  display: flex;
+  /* 文本居中 */
+  /* justify-content: center; */
+  /* 外边框 */
+  padding-top: 120rpx;
+}
+.head-box >image{
+  /* 头像 */
+  margin-left: 32px;
+  width: 100rpx;
+  height: 100rpx;
+}
+.head-box >view{
+  /* 头图文本 */
+  margin-left: 10rpx;
+  font-size: 38rpx;
+  font-weight: 600;
+  line-height: 100rpx;
+  color: #4d4132;
+}
+/* 天气框 */
+.weather_box{
+
+  height: 280rpx;
+  /* 外边距 */
+  margin: 38rpx 32rpx 0;
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 */
+  box-shadow: 0 8rpx 20rpx 0 rgba(0, 0, 0, 0.3);
+  /* 圆角矩形 */
+  border-radius: 40rpx;
+}
+.welcome_text{
+  /* 欢迎文本格式 */
+  padding-top: 15rpx;
+  font-size: 26rpx;
+  /* 文本居中 */
+  text-align: center;
+  color:#4d4132;
+
+}
+.w50{
+  /* 左边天气图 */
+  width: 50%;
+}
+/* 天气地点类 */
+.location_text{
+  margin-top: 40rpx;
+}
+/* 温度数据类 */
+.temperature_text{
+  margin-top: 10rpx;
+  font-size: 80rpx;
+  color: #4d4132;
+}
+/* mqtt连接UI */
+.mqtt_box{
+
+  /* 来个弹性盒子 */
+  display: flex;
+  /* 两端对齐 */
+  justify-content: space-between;
+  height: 100rpx;
+  /* 外边距 */
+  margin: 38rpx 32rpx 0;
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 */
+  box-shadow: 0 8rpx 20rpx 0 rgba(0, 0, 0, 0.3);
+  /* 圆角矩形 */
+  border-radius: 40rpx;
+  /* 字体大小 */
+  font-size: 45rpx;
+  /* 行高 */
+  line-height: 100rpx;
+  /* 内边距 */
+  padding: 0 30rpx;
+}
